@@ -1,0 +1,4 @@
+pydantic
+pyautogen
+rich
+pyfiglet

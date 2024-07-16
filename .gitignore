@@ -1,0 +1,14 @@
+   # .gitignore
+   
+   # Python
+   **/__pycache__/
+   
+   # Virtual Environment
+   coup_ai/
+   
+   # IDEs
+   .vscode/
+   .cache/
+   
+   # Project specific
+   *.log

@@ -39,10 +39,6 @@ class PlayerAgent(autogen.ConversableAgent):
         return self.exchange_handler.make_decision(game_state=game_state, available_cards=available_cards, num_to_keep=num_to_keep)
 
     def choose_influence_to_lose(self, game_state: GameState) -> Role:
-        # chosen_index = self.influence_handler.make_decision(game_state)
-        # discarded_role = self.roles.pop(chosen_index)
-        # return discarded_role
-    
         chosen_index = self.influence_handler.make_decision(game_state)
 
         if chosen_index < 0 or chosen_index >= len(self.roles):

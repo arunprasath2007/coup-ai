@@ -50,3 +50,12 @@ class RoleUtils:
     def can_role_block_action(role_name: str, action_type: str) -> bool:
         blocking_roles = RoleUtils.get_roles_that_can_block(action_type)
         return role_name in blocking_roles
+    
+    @staticmethod
+    def get_role_info() -> str:
+        role_info = ""
+        for role in [Duke(), Captain(), Ambassador(), Assassin(), Contessa()]:
+            role_info += f"{role.name}:\n"
+            role_info += f"  - Actions: {', '.join(role.actions)}\n"
+            role_info += f"  - Can block: {', '.join(role.block_actions)}\n"
+        return role_info

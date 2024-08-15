@@ -1,6 +1,6 @@
 # Coup AI Game
 
-This project implements an AI-driven version of the popular board game Coup.
+This project implements an AI-driven version of the popular board game Coup. You can find the game details here https://www.ultraboardgames.com/coup/game-rules.php#google_vignette
 
 ## Setup
 
